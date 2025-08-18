@@ -1,0 +1,217 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styles */
+header {
+    background-color: #fff;
+    padding: 20px 0;
+    border-bottom: 3px solid #D4AF37;
+}
+
+.logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo h1 {
+    color: #D4AF37;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.logo p {
+    color: #777;
+    font-size: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #f0f0f0;
+}
+
+nav ul li.active a {
+    background-color: #D4AF37;
+    color: white;
+}
+
+/* Main Content Styles */
+main {
+    padding: 30px 0;
+}
+
+h2 {
+    color: #D4AF37;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+h3 {
+    color: #555;
+    margin-bottom: 15px;
+    font-size: 1.4rem;
+}
+
+/* Card Styles */
+.card, .account-card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-top: 4px solid #D4AF37;
+}
+
+.balance {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #D4AF37;
+    margin: 10px 0;
+}
+
+/* Button Styles */
+.gold-btn {
+    background-color: #D4AF37;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 5px;
+    transition: all 0.3s ease;
+}
+
+.gold-btn:hover {
+    background-color: #C9A227;
+    transform: translateY(-2px);
+}
+
+/* Transaction Styles */
+.transaction {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.debit {
+    color: #e74c3c;
+}
+
+.credit {
+    color: #2ecc71;
+}
+
+/* Profile Styles */
+.profile-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.profile-pic {
+    width: 80px;
+    height: 80px;
+    background-color: #D4AF37;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 30px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.profile-info p {
+    margin-bottom: 10px;
+}
+
+/* Form Styles */
+select, input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    color: #777;
+    border-top: 1px solid #eee;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .profile-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-pic {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    nav ul li {
+        margin: 5px 0;
+    }
+}
