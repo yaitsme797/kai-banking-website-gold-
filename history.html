@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Pay - History</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>KAI PAY</h1>
+                <p>Banking Reimagined</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li><a href="balance.html">Balance</a></li>
+                    <li class="active"><a href="history.html">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="history-section">
+                <h2>Transaction History</h2>
+                <div class="filters">
+                    <select>
+                        <option>All Accounts</option>
+                        <option>Primary Checking</option>
+                        <option>Savings Account</option>
+                        <option>Credit Card</option>
+                    </select>
+                    <select>
+                        <option>Last 30 Days</option>
+                        <option>Last 7 Days</option>
+                        <option>Last 90 Days</option>
+                        <option>Custom Range</option>
+                    </select>
+                </div>
+                
+                <div class="transaction-history">
+                    <div class="transaction">
+                        <div class="transaction-details">
+                            <p class="date">Oct 15, 2023</p>
+                            <p class="description">Amazon Purchase</p>
+                            <p class="category">Shopping</p>
+                        </div>
+                        <p class="amount debit">-$45.99</p>
+                    </div>
+                    <div class="transaction">
+                        <div class="transaction-details">
+                            <p class="date">Oct 10, 2023</p>
+                            <p class="description">Salary Deposit</p>
+                            <p class="category">Income</p>
+                        </div>
+                        <p class="amount credit">+$3,500.00</p>
+                    </div>
+                    <div class="transaction">
+                        <div class="transaction-details">
+                            <p class="date">Oct 5, 2023</p>
+                            <p class="description">Netflix Subscription</p>
+                            <p class="category">Entertainment</p>
+                        </div>
+                        <p class="amount debit">-$14.99</p>
+                    </div>
+                    <div class="transaction">
+                        <div class="transaction-details">
+                            <p class="date">Oct 1, 2023</p>
+                            <p class="description">Electric Bill</p>
+                            <p class="category">Utilities</p>
+                        </div>
+                        <p class="amount debit">-$125.75</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Kai Pay Banking. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kai Pay - Balance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <h1>KAI PAY</h1>
+                <p>Banking Reimagined</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="profile.html">Profile</a></li>
+                    <li class="active"><a href="balance.html">Balance</a></li>
+                    <li><a href="history.html">History</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="balance-section">
+                <h2>Account Balances</h2>
+                <div class="accounts">
+                    <div class="account-card">
+                        <h3>Primary Checking</h3>
+                        <p class="balance">$12,450.00</p>
+                        <p>**** **** **** 4567</p>
+                    </div>
+                    <div class="account-card">
+                        <h3>Savings Account</h3>
+                        <p class="balance">$8,725.50</p>
+                        <p>**** **** **** 8910</p>
+                    </div>
+                    <div class="account-card">
+                        <h3>Credit Card</h3>
+                        <p class="balance">-$1,245.75</p>
+                        <p>**** **** **** 2345</p>
+                    </div>
+                </div>
+                
+                <div class="transfer-section">
+                    <h3>Quick Transfer</h3>
+                    <form>
+                        <select>
+                            <option>From Account</option>
+                            <option>Primary Checking</option>
+                            <option>Savings Account</option>
+                        </select>
+                        <select>
+                            <option>To Account</option>
+                            <option>Savings Account</option>
+                            <option>External Transfer</option>
+                        </select>
+                        <input type="number" placeholder="Amount">
+                        <button type="submit" class="gold-btn">Transfer</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2023 Kai Pay Banking. All rights reserved.</p>
+        </footer>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
