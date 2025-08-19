@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kai Pay - Balance</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/htmx.org@2.0.6/dist/htmx.min.js"
+        integrity="sha384-Akqfrbj/HpNVo8k11SXBb6TlBWmXXlYQrCSqEWmyKJe+hDm3Z/B2WVG4smwBkRVm"
+        crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="container">
         <header>
@@ -13,7 +18,7 @@
                 <h1>KAI PAY</h1>
                 <p>Banking Reimagined</p>
             </div>
-            <nav>
+            <nav hx-boost="true">
                 <ul>
                     <li><a href="index.html">Home</a></li>
                     <li><a href="profile.html">Profile</a></li>
@@ -43,7 +48,7 @@
                         <p>**** **** **** 2345</p>
                     </div>
                 </div>
-                
+
                 <div class="transfer-section">
                     <h3>Quick Transfer</h3>
                     <form>
@@ -70,4 +75,5 @@
     </div>
     <script src="js/script.js"></script>
 </body>
+
 </html>
